@@ -1,0 +1,311 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+html{
+    font-size: 62.5%;
+}
+
+
+#navbar {
+    width: 100%;
+    padding: 1.8rem 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.456);
+    position: fixed;
+    z-index: 1000;
+
+}
+
+#navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+#navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.8rem;
+    border-radius: 2rem;
+    padding: 0.5rem 1rem;
+}
+
+#navbar ul li a:hover {
+    color: black;
+    background-color: white;
+}
+
+.h1-heading {
+    color: white;
+    font-size: 3rem;
+}
+.menu{
+    font-size: 3rem;
+    align-items: center;
+    display: flex;
+    display: none;
+    
+}
+.menu .btn{
+    color: white;
+    font-size: 3.2rem;
+}
+
+.menu .Xbar{
+    display: none;
+}
+
+
+#home {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.34);
+    padding:10rem 5%;
+    position: relative;
+
+}
+
+.h1-heading2{
+    font-size: 4rem;
+    color: white;
+}
+
+.Paragraph1 {
+    text-align: center;
+    font-size: 1.5rem;
+    color: white;
+
+}
+
+#Button1 {
+    font-weight: bold;
+    border-radius: 1rem;
+    margin-top: 2rem;
+    padding: 1rem 2rem;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+#Button1:hover {
+    font-weight: bolder;
+    background-color: black;
+    color: white;
+}
+
+#home::before {
+    content: "";
+    top: 0;
+    left: 0;
+    background-image: url(home2.jpg);
+    background-size:cover;
+    align-items: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    opacity: 0.8;
+    z-index: -1;
+}
+
+.food {
+    text-align: center;
+    padding: 3rem 5%;
+
+}
+
+.h1-heading3 {
+    font-size: 3rem;
+    color: black;
+}
+
+.food .box1 {
+    display: flex;
+    gap: 3rem;
+}
+
+#service img {
+    height: 120px;
+}
+
+#service {
+    background-color: rgb(228, 228, 228);
+    border: 0.3rem solid brown;
+    border-radius: 2rem;
+    padding: 2rem;
+}
+
+/* section-3 */
+#Clients {
+    width: 100%;
+    padding: 2rem 5%;
+    text-align: center;
+    position: relative;
+}
+
+.h1-heading4 {
+    font-size: 3rem;
+}
+
+#Clients2 {
+    width: 100%;
+}
+
+#Clients::before {
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-image: url(home2.jpg);
+    background-repeat: no-repeat;
+    align-items: center;
+    background-size: cover;
+    position: absolute;
+    opacity: 0.5;
+    z-index: -1;
+    left: 0;
+    top: 0;
+}
+
+#AllLogo{
+    display: flex;
+    gap: 5rem;
+    margin: 4rem 0;
+    justify-content: center;
+}
+.logo img {
+    height: 5rem;
+}
+
+#Contect {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+    padding: 2rem 5%;
+}
+
+#Contect::before {
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-image: url(pexels-pixabay-263564.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.3;
+}
+
+
+
+form {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+form .group-form {
+    display: flex;
+    flex-direction: column;
+    padding:0 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+label {
+    font-weight: bolder;
+    font-size: 1.8rem;
+}
+form .group-form input{
+    width: 100%;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+}
+
+textarea {
+
+    width: 100%;
+}
+
+#footer {
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 1rem 5%;
+}
+
+@media(max-width:900px){
+    html{
+        font-size: 50%;
+    }
+}
+@media(max-width:800px){
+    html{
+        font-size: 45%;
+    }
+    
+}
+@media(max-width:600px){
+    html{
+        font-size: 55%;
+    }
+#navbar ul {
+    position: absolute;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.456);
+    top: 100%;
+    right: -100%;
+    width: 40%;
+    /* justify-content: center; */
+    border-top: 1px solid white;
+    padding: 3rem 0;
+    align-items: center;
+    transition-duration: 0.5s;
+}
+.menu{
+    display: block;
+}
+.food .box1 {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+.logo img {
+    height: 3.5rem;
+}
+form {
+    width: 80%;
+}
+form .group-form {
+    padding:0 0rem;
+}
+.h1-heading2{
+    font-size: 3rem;
+}
+    
+}
+@media (max-width:350px){
+    html{
+        font-size: 50%;
+    }
+    .h1-heading2{
+        font-size: 2.5rem;
+    }
+}
